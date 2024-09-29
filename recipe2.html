@@ -3,66 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>recipe2</title>
+    <title>Veg Soup Recipe</title>
+    <!-- Link to Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #2a9d8f;
+        font-family: "Poppins", sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        color: #fff;
+        margin-top: 20px;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        border-bottom: 2px solid #fff;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      ol {
+        padding-left: 20px;
+        margin-top: 10px;
+        list-style-type: decimal-leading-zero;
+      }
+
+      ol li {
+        font-size: 1.1em;
+        margin: 8px 0;
+      }
+
+      b {
+        color: #f1faee;
+        font-weight: 600;
+      }
+
+      a {
+        color: #e76f51;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Button styling */
+      .button {
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: #264653;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #e76f51;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        h2 {
+          font-size: 1.2em;
+        }
+
+        ol li {
+          font-size: 1em;
+        }
+      }
+    </style>
   </head>
-  <body bgcolor="gray">
-    <h1>Veg Soup</h1>
-    <img src="./images/Mixed-Veg-Soup.webp" />
-    <br />
-    <h2>
-      Ingredient
-      <ol>
-        <li>1 large onion</li>
-        <li>1 pound (450g) carrots, peeled , 4 to 5 medium</li>
-        <li>4 celery sticks</li>
-        <li>1 tablespoon olive oil</li>
-        <li>Salt</li>
-        <li>1/4 teaspoon crushed red pepper flakes</li>
-        <li>1 pound (450g) thin-skinned potatoes , 3 medium</li>
-        <li>3 garlic cloves, peeled and halved</li>
-        <li>2 bay leaves</li>
-        <li>3 sprigs fresh thyme or 1/2 teaspoon dried thyme</li>
-        <li>1/4 cup (60ml) half-and-half, cream, or coconut milk</li>
-      </ol>
-    </h2>
-    <h2>
-      Directions
-      <ol>
-        <li>Chop the onion, carrots, and celery into 1/2-inch chunks.</li>
-        <li>
-          Chop the potatoes into 1/2-inch chunks and set aside from the other
-          veggies.
-        </li>
-        <li>
-          Heat the oil in a large pot over medium-high heat. Toss the onion,
-          carrots, and celery around in the oil. Sprinkle with 1/2 teaspoon of
-          salt and add the red pepper flakes.
-        </li>
-        <li>
-          Cook, stirring occasionally, until the vegetables sweat, soften, and
-          smell sweet, 5 to 10 minutes.
-        </li>
-        <li>
-          Stir in the potatoes, garlic halves, bay leaves, and thyme. Cook for 5
-          minutes. Add more oil if the pot seems dry.
-        </li>
-        <li>
-          Stir in the potatoes, garlic halves, bay leaves, and thyme. Cook for 5
-          minutes. Add more oil if the pot seems dry.
-        </li>
-        <li>
-          Remove the soup from the heat. Take out the bay leaves and thyme
-          sprigs and discard them.
-        </li>
-        <li>
-          Use an immersion blender, stand blender, or food mill to puree the
-          soup until smooth.
-        </li>
-        <li>
-          Stir in the cream. Taste for seasoning and adjust with more salt and
-          pepper if necessary.
-        </li>
-      </ol>
-    </h2>
+  <body>
+    <h1>How to Make Veg Soup</h1>
+    <img src="./images/Mixed-Veg-Soup.webp" alt="Mixed Veg Soup Image" />
+
+    <h2>Ingredients</h2>
+    <ol>
+      <li>1 large onion</li>
+      <li>1 pound (450g) carrots, peeled , 4 to 5 medium</li>
+      <li>4 celery sticks</li>
+      <li>1 tablespoon olive oil</li>
+      <li>Salt</li>
+      <li>1/4 teaspoon crushed red pepper flakes</li>
+      <li>1 pound (450g) thin-skinned potatoes , 3 medium</li>
+      <li>3 garlic cloves, peeled and halved</li>
+      <li>2 bay leaves</li>
+      <li>3 sprigs fresh thyme or 1/2 teaspoon dried thyme</li>
+      <li>1/4 cup (60ml) half-and-half, cream, or coconut milk</li>
+    </ol>
+
+    <h2>Directions</h2>
+    <ol>
+      <li>Chop the onion, carrots, and celery into 1/2-inch chunks.</li>
+      <li>
+        Chop the potatoes into 1/2-inch chunks and set aside from the other
+        veggies.
+      </li>
+      <li>
+        Heat the oil in a large pot over medium-high heat. Toss the onion,
+        carrots, and celery around in the oil. Sprinkle with 1/2 teaspoon of
+        salt and add the red pepper flakes.
+      </li>
+      <li>
+        Cook, stirring occasionally, until the vegetables sweat, soften, and
+        smell sweet, 5 to 10 minutes.
+      </li>
+      <li>
+        Stir in the potatoes, garlic halves, bay leaves, and thyme. Cook for 5
+        minutes. Add more oil if the pot seems dry.
+      </li>
+      <li>
+        Remove the soup from the heat. Take out the bay leaves and thyme sprigs
+        and discard them.
+      </li>
+      <li>
+        Use an immersion blender, stand blender, or food mill to puree the soup
+        until smooth.
+      </li>
+      <li>
+        Stir in the cream. Taste for seasoning and adjust with more salt and
+        pepper if necessary.
+      </li>
+    </ol>
+
+    <button class="button">Get more recipes</button>
   </body>
 </html>

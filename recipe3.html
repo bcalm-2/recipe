@@ -3,48 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>recipe3</title>
+    <title>Maggi Recipe</title>
+    <!-- Link to Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #e76f51;
+        font-family: "Poppins", sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        color: #fff;
+        margin-top: 20px;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        border-bottom: 2px solid #fff;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+      }
+
+      ol {
+        padding-left: 20px;
+        margin-top: 10px;
+        list-style-type: decimal-leading-zero;
+      }
+
+      ol li {
+        font-size: 1.1em;
+        margin: 8px 0;
+      }
+
+      b {
+        color: #f1faee;
+        font-weight: 600;
+      }
+
+      a {
+        color: #264653;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Button styling */
+      .button {
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: #264653;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #2a9d8f;
+      }
+
+      /* Responsive design */
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        h2 {
+          font-size: 1.2em;
+        }
+
+        ol li {
+          font-size: 1em;
+        }
+      }
+    </style>
   </head>
-  <body bgcolor="greenred">
-    <h1>Maggi</h1>
-    <img src="./images/maggi.jpg" />
-    <br />
-    <h2>
-      Ingredient
-      <ol>
-        <li>MAGGI Magic Cubes - Vegetarian, 1/4, crumbled</li>
-        <li>MAGGI Noodles - 1 Packet</li>
-        <li>Water - 1 cups or 300 ml</li>
-        <li>Carrots (diced) - 1/8th cup</li>
-        <li>Salt</li>
-        <li>Carrots (diced) - 1/8th cup</li>
-        <li>Capsicum/Bell Peppers chopped - 1/8th cup</li>
-        <li>Onion (Chopped) - ½ small</li>
-        <li>Coriander powder - ½ Teaspoon</li>
-        <li>coriender leaves</li>
-      </ol>
-    </h2>
-    <h2>
-      Directions
-      <ol>
-        <li>
-          Cut the vegetables as mentioned in the ingredient list. Preparation
-        </li>
-        <li>Add the water to a pot Preparation</li>
-        <li>
-          On High flame, once the water starts to boil, add Chopped Onion,
-          Carrots, Green Peas and Capsicum. for cooking
-        </li>
-        <li>
-          Add salt, garam masala, Jeera and Coriander powder and MAGGI Magic
-          Cubes. Add red chili powder if you want spicy.Mix well. for cooking
-          Add MAGGI Tastemaker and Noodles. Break the Noodles in 4 pieces before
-          adding. Mix well, On high flame. Stir occasionally. for cooking Turn
-          the gas flame low and add Green Chilies and Broccoli, mix well. Cover
-          the pot.
-        </li>
-        <li>Serve immediately and add chopped Coriander Leaves for garnishing Presentation</li>
-      </ol>
-    </h2>
+  <body>
+    <h1>How to Make Maggi</h1>
+    <img src="./images/maggi.jpg" alt="Maggi Image" />
+
+    <h2>Ingredients</h2>
+    <ol>
+      <li>MAGGI Magic Cubes - Vegetarian, 1/4, crumbled</li>
+      <li>MAGGI Noodles - 1 Packet</li>
+      <li>Water - 1 cup or 300 ml</li>
+      <li>Carrots (diced) - 1/8th cup</li>
+      <li>Salt</li>
+      <li>Capsicum/Bell Peppers chopped - 1/8th cup</li>
+      <li>Onion (Chopped) - ½ small</li>
+      <li>Coriander powder - ½ Teaspoon</li>
+      <li>Coriander leaves</li>
+    </ol>
+
+    <h2>Directions</h2>
+    <ol>
+      <li>Cut the vegetables as mentioned in the ingredient list.</li>
+      <li>Add water to a pot and bring it to a boil.</li>
+      <li>
+        Once the water boils, add Chopped Onion, Carrots, Green Peas, and
+        Capsicum.
+      </li>
+      <li>
+        Add salt, garam masala, Jeera, Coriander powder, and MAGGI Magic Cubes.
+        Add red chili powder if you want it spicy. Mix well.
+      </li>
+      <li>
+        Add MAGGI Tastemaker and Noodles. Break the Noodles into 4 pieces before
+        adding. Stir occasionally.
+      </li>
+      <li>
+        Turn the gas flame low and add Green Chilies and Broccoli. Mix well and
+        cover the pot.
+      </li>
+      <li>Serve immediately and garnish with chopped Coriander Leaves.</li>
+    </ol>
+
+    <button class="button">Get more recipes</button>
   </body>
 </html>
