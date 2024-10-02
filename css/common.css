@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 14px;
+  color: aquamarine;
+  right: 50px;
+  font-size: 46px;
+}
+a {
+  margin-right: 20px;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  font-family: "Lobster", cursive;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
